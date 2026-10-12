@@ -52,7 +52,8 @@
   "screenshots": [],
   "platforms": [
     "tg5040",
-    "tg5050"
+    "tg5050",
+    "h700"
   ],
   "launch": "launch.sh"
 }
