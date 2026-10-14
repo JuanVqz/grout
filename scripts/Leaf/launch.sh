@@ -37,7 +37,7 @@ echo "=== Launching Grout at $(date) ==="
 
 # Apply pending update. It sits in a hidden folder, which Leaf does not list.
 if [ -d "$APPS_DIR/.update" ]; then
-    cp -rf "$APPS_DIR"/.update/* "$APPS_DIR"
+    cp -rf "$APPS_DIR"/.update/* "$APPS_DIR" || exit 1
     rm -rf "$APPS_DIR/.update"
 fi
 
